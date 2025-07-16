@@ -57,5 +57,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ DOCKER_USERNAME }}/loan-app:${{ BUILD_NUMBER }}
+          tags: ajs3ra8/loan-app:${{ BUILD_NUMBER }}
 
