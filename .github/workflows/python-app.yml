@@ -59,3 +59,9 @@ jobs:
           push: true
           tags: ajs3ra8/loan-app:${{ github.run_number }}
 
+      - name: copy and update the manifest file
+        run: |
+          cp manifest_original/deployment.yaml manifests/deployment.yaml
+          sed -i 's/tag/${{ github.run_number }}/g' manifests/deployment.yaml
+
+
