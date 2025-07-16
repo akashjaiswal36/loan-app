@@ -77,7 +77,7 @@ jobs:
 
           git add manifests/
           git commit -m "Update deployment manifests with build number ${{ github.run_number }}"
-          git push https://akashjaiswal36:${{ secrets.TOKEN }}@github.com/akashjaiswal36/loan-app.git HEAD:main
+          git push https://x-access-token:${{ secrets.TOKEN }}@github.com/akashjaiswal36/loan-app.git HEAD:main
 
 
 
