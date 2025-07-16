@@ -61,7 +61,8 @@ jobs:
 
       - name: copy and update the manifest file
         run: |
-          cp manifest_original/deployment.yaml manifests/
-          sed -i 's/tag/${{ github.run_number }}/g' manifests/deployment.yaml
+          cp loan/manifest_original/deployment.yaml loan/manifests/
+          ls manifests/
+          sed -i "s/tag/${{ github.run_number }}/g" manifests/deployment.yaml
 
 
