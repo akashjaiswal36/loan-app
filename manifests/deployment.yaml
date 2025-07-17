@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: loan-app
-        image: ajs3ra8/loan-app:24
+        image: ajs3ra8/loan-app:25
         ports:
         - containerPort: 5000
