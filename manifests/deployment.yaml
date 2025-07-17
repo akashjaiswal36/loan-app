@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: loan-deployment
+  labels:
+    app: loan-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: loan-app
+  template:
+    metadata:
+      labels:
+        app: loan-app
+    spec:
+      containers:
+      - name: loan-app
+        image: ajs3ra8/loan-app:21
+        ports:
+        - containerPort: 5000
